@@ -8,15 +8,12 @@ The official client is [here](https://github.com/influxdb/influxdb-ruby).
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'rinflux'
+```sh
+git clone https://github.com/winebarrel/rinflux.git
+cd rinflux
+bundle install
+bundle exec rake install
 ```
-
-And then execute:
-
-    $ bundle
 
 ## Usage
 
