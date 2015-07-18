@@ -4,6 +4,8 @@ It is unofficial low level ruby client library for InfluxDB.
 
 The official client is [here](https://github.com/influxdb/influxdb-ruby).
 
+[![Build Status](https://travis-ci.org/winebarrel/rinflux.svg?branch=master)](https://travis-ci.org/winebarrel/rinflux)
+
 ## Installation
 
 Add this line to your application's Gemfile:
