@@ -76,4 +76,4 @@ client.write(
 * [Write Syntax | InfluxDB](https://influxdb.com/docs/v0.9/write_protocols/write_syntax.html)
 * [Querying Data | InfluxDB](https://influxdb.com/docs/v0.9/guides/querying_data.html)
 * [Line Protocol | InfluxDB](https://influxdb.com/docs/v0.9/write_protocols/line.html)
-* [Write Syntax | InfluxDB](https://influxdb.com/docs/v0.9/write_protocols/write_syntax.html)
+* [Line Protocol Syntax Reference | InfluxDB](https://influxdb.com/docs/v0.9/write_protocols/write_syntax.html)
