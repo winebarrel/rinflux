@@ -30,11 +30,6 @@ client = Rinflux::Client.new
 ### Querying Data
 
 ```ruby
-```
-
-### Writing Data
-```ruby
-
 client.query(
   db: :mydb,
   q: "SELECT value FROM cpu_load_short WHERE region='us-west'"
@@ -45,6 +40,20 @@ client.query(
 #          "tags"=>{"host"=>"server01", "region"=>"us-west"},
 #          "columns"=>["time", "value"],
 #          "values"=>[["2015-01-29T21:51:28.968422294Z", 0.64]]}]}]}
+```
+
+### Writing Data
+```ruby
+client.write(
+  :disk_free,   # measurement
+  442221834240, # value
+  {
+    db: :mydb,
+    tags: {hostname: 'server01', disk_type: 'SSD'},
+    timestamp: Time.at(1435362189, 575692)
+  }
+)
+#=> "disk_free,hostname=server01,disk_type=SSD value=442221834240 1435362189575692000"
 ```
 ```ruby
 client.write(
