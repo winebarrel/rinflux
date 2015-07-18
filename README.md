@@ -71,8 +71,6 @@ client.write(
 #=> 'disk_free,hostname=server01,disk_type=SSD free_space=442221834240,disk_type="SSD" 1435362189575692182'a
 ```
 
-TODO: Write usage instructions here
-
 ## Related links
 
 * [Write Syntax | InfluxDB](https://influxdb.com/docs/v0.9/write_protocols/write_syntax.html)
