@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Genki Sugawara']
   spec.email         = ['sugawara@cookpad.com']
 
-  spec.summary       = %q{The unofficial low level ruby client library for InfluxDB.}
-  spec.description   = %q{The unofficial low level ruby client library for InfluxDB.}
+  spec.summary       = %q{It is unofficial low level ruby client library for InfluxDB.}
+  spec.description   = %q{It is unofficial low level ruby client library for InfluxDB.}
   spec.homepage      = 'https://github.com/winebarrel/rinflux'
   spec.license       = 'MIT'
 
