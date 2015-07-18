@@ -2,6 +2,8 @@
 
 The unofficial low level ruby client library for InfluxDB.
 
+The official client is [here](https://github.com/influxdb/influxdb-ruby).
+
 ## Installation
 
 Add this line to your application's Gemfile:
