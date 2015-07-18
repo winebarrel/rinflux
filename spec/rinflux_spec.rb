@@ -29,7 +29,9 @@ describe Rinflux::Client do
   end
 
   describe '#query' do
-    subject { client.query(params) }
+    subject { client.query(query, options) }
+
+    let(:options) { {} }
 
     let(:client) do
       rinflux do |stub|
@@ -50,12 +52,8 @@ describe Rinflux::Client do
                "values"=>[["2015-01-29T21:51:28.968422294Z", 0.64]]}]}]}
       end
 
-      let(:params) do
-        {
-          db: :mydb,
-          q: "SELECT value FROM cpu_load_short WHERE region='us-west'"
-        }
-      end
+      let(:query) { "SELECT value FROM cpu_load_short WHERE region='us-west'" }
+      let(:options) { {db: :mydb} }
 
       let(:expected_query) do
         "db=mydb&q=SELECT+value+FROM+cpu_load_short+WHERE+region%3D%27us-west%27"
@@ -71,11 +69,7 @@ describe Rinflux::Client do
         {"results"=>[{}]}
       end
 
-      let(:params) do
-        {
-          q: "CREATE DATABASE mydb"
-        }
-      end
+      let(:query) { "CREATE DATABASE mydb" }
 
       let(:expected_query) do
         "q=CREATE+DATABASE+mydb"

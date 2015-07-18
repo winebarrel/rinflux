@@ -31,8 +31,8 @@ client = Rinflux::Client.new
 
 ```ruby
 client.query(
-  db: :mydb,
-  q: "SELECT value FROM cpu_load_short WHERE region='us-west'"
+  "SELECT value FROM cpu_load_short WHERE region='us-west'"
+  db: :mydb
 )
 #=> {"results"=>
 #     [{"series"=>

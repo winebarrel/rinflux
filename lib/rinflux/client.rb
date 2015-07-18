@@ -23,10 +23,10 @@ class Rinflux::Client
     end
   end
 
-  def query(params = {})
+  def query(query, options = {})
     response = @conn.get do |req|
       req.url '/query'
-      req.params = params
+      req.params = options.merge(:q => query)
       yield(req) if block_given?
     end
 
